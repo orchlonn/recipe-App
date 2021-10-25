@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
                 color: Color.fromRGBO(20, 51, 51, 1),
               ),
               headline2: const TextStyle(
-                color: Color.fromRGBO(20, 51, 51, 1),
+                color: Color.fromRGBO(98, 0, 238, 0.4),
               ),
               headline3: const TextStyle(
                 fontSize: 20,
