@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/category_meals_screen.dart';
-import 'screens/categories_screen.dart';
+import 'package:recipe_app/screens/login_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -9,32 +8,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Хоолны жор',
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.pink,
-        canvasColor: const Color.fromRGBO(255, 254, 229, 1),
-        fontFamily: 'Raleway',
-        textTheme: ThemeData.light().textTheme.copyWith(
-              headline1: const TextStyle(
-                color: Color.fromRGBO(20, 51, 51, 1),
-              ),
-              headline2: const TextStyle(
-                color: Color.fromRGBO(98, 0, 238, 0.4),
-              ),
-              headline3: const TextStyle(
-                fontSize: 20,
-                fontFamily: 'RobotoCondensed',
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-      ),
-      home: const CategoriesScreen(),
-      routes: {
-        // '/': (ctx) => CategoriesScreen(),
-        CategoryMealsScreen.routeName: (ctx) => const CategoryMealsScreen(),
-      },
+      home: Login(),
     );
   }
 }
