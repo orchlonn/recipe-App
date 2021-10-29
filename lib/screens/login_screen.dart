@@ -277,7 +277,8 @@ class _LoginState extends State<Login> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              MainScreen(username: emailController.text)))
+                              // MainScreen(username: emailController.text)))
+                              const WeatherScreen()))
                 }
               else
                 {
